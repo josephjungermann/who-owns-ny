@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>CraftII Final Project</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Leaflet map style -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <!-- Your styles sheet should be called here -->
+    <link href="style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head> ​
+
+  <body>
+    <img id="header-image" src="images/image1.JPG" />
+    <div class="container">
+      <h1>Example Header</h1>
+      <p class="byline"><i>By Joseph Jungermann</i></p>
+      <br>
+      <p>Example text</p>
+      <br>
+      <div id="covidMap">
+      </div>
+      <br>
+      <p>Example text</p>
+      <br>
+      <!-- script and style for data viz chart 1 -->
+      <p><iframe title="Total Employees Affected by WARN Notices Due to COVID-19" aria-label="Interactive area chart" id="datawrapper-chart-XcVyj" src="https://datawrapper.dwcdn.net/XcVyj/2/" scrolling="no" frameborder="0"
+          style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+        <script type="text/javascript">
+          ! function() {
+            "use strict";
+            window.addEventListener("message", (function(a) {
+              if (void 0 !== a.data["datawrapper-height"])
+                for (var e in a.data["datawrapper-height"]) {
+                  var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']");
+                  t && (t.style.height = a.data["datawrapper-height"][e] + "px")
+                }
+            }))
+          }();
+        </script>
+      </p>
+      <br>
+      <blockquote>This is example blockquote text that will be placed here.</blockquote>
+      <br>
+      <!-- script and style for data vizual chart 2 -->
+      <p><iframe title="Total Employees Laid Off by Industry Due to COVID-19" aria-label="chart" id="datawrapper-chart-MdHPS" src="https://datawrapper.dwcdn.net/MdHPS/2/" scrolling="no" frameborder="0"
+          style="width: 0; min-width: 100% !important; border: none;" height="441"></iframe>
+        <script type="text/javascript">
+          ! function() {
+            "use strict";
+            window.addEventListener("message", (function(a) {
+              if (void 0 !== a.data["datawrapper-height"])
+                for (var e in a.data["datawrapper-height"]) {
+                  var t = document.getElementById("datawrapper-chart-" + e) || document.querySelector("iframe[src*='" + e + "']");
+                  t && (t.style.height = a.data["datawrapper-height"][e] + "px")
+                }
+            }))
+          }();
+        </script>
+      </p>
+      <br>
+      <p>Example text</p>
+      <br>
+      <p>Example text</p>
+      <br>
+    </div>
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- Script library for Leaflet-->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+    <!-- Your javascript page sources should be called here -->
+    <!-- Script for geoJSON leaflet points and data-->
+    <script src="data/WARN.js"></script>
+    <!-- Script for Leaflet map build -->
+    <script src="map.js"></script>
+
+  </body>
+
+</html>
