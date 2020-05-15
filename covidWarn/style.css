@@ -1,0 +1,101 @@
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    background-color: #eee;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', serif;
+    line-height: 1.6;
+}
+
+h1 {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    line-height: 80px;
+}
+
+/*
+h2 {
+    display: block;
+    padding: 20px 20px 12px;
+    font: 700 36px 'Open Sans', sans-serif;
+    background: #623CEA;
+    color: #FAFAFA;
+    text-transform: uppercase;
+}*/
+blockquote {
+    font-family: "Lucida Console", Monaco, monospace;
+    line-height: 1.5em;
+    background: #f9f9f9;
+    border-left: 10px solid #623CEA;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 2.5em;
+    line-height: 0.3em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+#header-image {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 900px;
+}
+
+.byline {
+    margin: auto;
+    text-align: center;
+}
+
+#covidMap {
+    height: 500px;
+}
+
+.infoHeader {
+    color: Black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
