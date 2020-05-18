@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- first step to a responsive site -->
-    <title>CraftII Final Project</title>
+    <title>Covid New York WARN Notices</title>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Leaflet map style -->
@@ -20,22 +20,30 @@
       	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       	<![endif]-->
-  </head> ​
+  </head>
 
   <body>
     <a href="https://josephjungermann.github.io/who-owns-ny/"><img id="skyline-image" src="images/nyc.png"></a>
     <div class="container">
       <img id="header-image" src="images/image1.JPG" />
-      <h1>Example Header</h1>
-      <p class="byline"><i>By Joseph Jungermann</i></p>
-      <br>
-      <p>Example text</p>
-      <br>
+      <h1>COVID WARN Notices Hint at Future Change in New York Labor Landscape</h1>
+      <p class="byline"><i><strong>By Joseph Jungermann</strong></i></p>
+      <p>The COVID-19 pandemic has rocked a New York population of nearly 20 million people, especially business owners and their employees who contribute to the economic prosperity of the state.</p>
+      <p>As working-class New Yorkers continue to deal with the devastating economic impact of the virus, more of them these days find themselves on the unemployment line, threatening their ability to afford the cost of living.</p>
+      <p>**Lede Quote**</p>
+      <p>There is perhaps no greater indication of the Coronavirus's effect on New York's workforce than the information presented by the New York State Department of Labor's "Worker Adjustment and Retraining Notification" data.</p>
+      <p>According to the Department of Labor, over 100,000 employees have been either laid off or furloughed due to COVID-related reasons.</p>
+      <p>The map below indicates the top 10 industries by the number of employees affected across New York State.</p>
       <div id="covidMap">
       </div>
-      <br>
-      <p>Example text</p>
-      <br>
+      <caption><i>Only the top 10 industries are included on this map. Click the key on the top right to filter by industry. Select each individual marker to find out information on the company and employees affected. This map is current as of
+          May 7,
+          2020.</i></caption>
+      <p>The Worker Adjustment and Retraining Notification Act of 1988 (or simply, the "WARN Act"), was developed to protect employees and their families by requiring employers that meet certain criteria to give advance notification of plant closings
+        and mass layoffs.</p>
+      <p>The WARN Act applies to private businesses that have 50 or more full-time workers. Employers are required to give all affected employees, any employee representatives, The New York State Department of Labor (DOL) and The Local Workforce
+        Investment Board (LWIB) a 90-day advanced notice of layoffs.</p>
+      <p>This includes closings that affect 25 or more workers, mass layoffs involving at least 33% of all the workers at the site or 250 or more full-time workers.</p>
       <!-- script and style for data viz chart 1 -->
       <p><iframe title="Total Employees Affected by WARN Notices Due to COVID-19" aria-label="Interactive area chart" id="datawrapper-chart-XcVyj" src="https://datawrapper.dwcdn.net/XcVyj/2/" scrolling="no" frameborder="0"
           style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
@@ -52,9 +60,13 @@
           }();
         </script>
       </p>
-      <br>
-      <blockquote>This is example blockquote text that will be placed here.</blockquote>
-      <br>
+      <p>Alana Breuer, a front office manager at the Hilton Garden Inn in Rosyln, New York, was furloughed on March 19 when Governor Andrew Cuomo officially called for a statewide lockdown. She is part of a hotel industry that has experienced 14% of
+        the total employees affected by WARN notices as of May 7.</p>
+      <p>"This will definitely impact the travel industry," said Breuer. "Weddings have been canceled until at least August, which we receive a lot of business from. We get their room blocks, rehearsal dinners and post wedding brunches."</p>
+      <p>The 30-year-old Breuer also noted that she just recenty received her unemployment benefits after not receiving income after over a month.</p>
+      <p>With a COVID-19 vaccine a long way away, industries decimated by layoffs will take years to recover, potentially reshaping the entire economic fabric of the state.</p>
+      <blockquote>This will definitely impact the travel industry. Weddings have been canceled until at least August.</blockquote>
+      <p>There may be no clear answer to the question, "Who owns New York?" but there is at least a clear indication of who used to own it.</p>
       <!-- script and style for data vizual chart 2 -->
       <p><iframe title="Total Employees Laid Off by Industry Due to COVID-19" aria-label="chart" id="datawrapper-chart-MdHPS" src="https://datawrapper.dwcdn.net/MdHPS/2/" scrolling="no" frameborder="0"
           style="width: 0; min-width: 100% !important; border: none;" height="441"></iframe>
@@ -71,24 +83,21 @@
           }();
         </script>
       </p>
+      <p>The federal government has pumped billions of dollars into the Small Business Administration's disaster relief programs, such as the "Paycheck Protection Program" and the "Economic Injury Disaster Loan Program," as a way to incentivize
+        business owners to hold onto their employees.</p>
+      <p>But a majority of owners have been unable to weather the storm, and the workers who have suffered as a result will be facing a tough road ahead when returning to a job market that will be crowded once the pandemic has ended.</p>
       <br>
-      <p>Example text</p>
-      <br>
-      <p>Example text</p>
-      <br>
+      <a href="https://josephjungermann.github.io/who-owns-ny/"><img id="skyline-image" src="images/nyc.png"></a>
     </div>
     <!-- the jQuery library. You need this to be able to use jQuery ($) -->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-
     <!-- Script library for Leaflet-->
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
-
     <!-- Your javascript page sources should be called here -->
     <!-- Script for geoJSON leaflet points and data-->
     <script src="data/WARN.js"></script>
     <!-- Script for Leaflet map build -->
     <script src="map.js"></script>
-
   </body>
 
 </html>
