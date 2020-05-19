@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>HTML Skeleton</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+
+
+    <img id="header-image" src="images/nyc.png" />
+
+    <div id="main-container">
+
+
+      <h1> Explainer: Section 581</h1>
+      <h3>May Olvera </h3>
+      <p> A 58-word section of the state’s tax law may be losing the city billions in taxes.</p>
+      <p> Rather than assessing the market value of condos and co-ops based on their sales history, the Department of Finance values each building by comparing it to similar nearby rentals. Groups such as the Independent Budget Office have found this
+        methodology to be problematic. </p>
+      <p> Section 581 of New York’s Real Property Tax Law:</p>
+
+      <blockquote> Notwithstanding any other provision of law, real
+        property owned or leased by a cooperative corporation or on a
+        condominium basis shall be assessed for purposes of this chapter at a
+        sum not exceeding the assessment which would be placed upon such parcel
+        were the parcel not owned or leased by a cooperative corporation or on a
+        condominium basis. </blockquote>
+      <p> The gist of Section 581 is that condos and co-ops must be assessed as if they were rental properties, which are valued based on the income they generate for their owners.
+      </p>
+      <p> Because condos and co-ops usually don’t generate income, the Department of Finance assigns them an input based on that of three rental buildings they consider “comparable,” based on factors like proximity and age of the building.
+      </p>
+
+      <p>This approach almost always results in a lower value than if sales prices were used, according to the Independent Budget Office. One reason for their undervaluation, a 2013 study conducted by NYU’s Furman Center found, is that rent-regulated
+        apartments are often used to value pre-war condos and co-ops.
+      </p>
+
+      <p>“Quite simply, many of these sorts of buildings are not comparable to any rental properties in the city,” the study reads. “Few, if any, rental buildings attract tenants as wealthy as people who buy luxury pre-war co-ops”
+      </p>
+
+      <p>Sift through the case file below. Inside, there is one condo and the three buildings the city has designated as its comparables.
+      </p>
+
+      <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1">Condo</li>
+        <li class="tab-link" data-tab="tab-2">Comparable 1</li>
+        <li class="tab-link" data-tab="tab-3">Comparable 2</li>
+        <li class="tab-link" data-tab="tab-4">Comparable 3</li>
+      </ul>
+
+      <div id="tab-1" class="tab-content current">
+        <b> 25 Central Park West</b><br>
+        Built in 1932. Made up of 423 units and measures 598,316 gross square feet. <br>
+        <i> Full Market Value</i>: $235,185,988<br>
+        <i> Market Value per SqFt</i>: $393.08<br>
+
+      </div>
+      <div id="tab-2" class="tab-content">
+        <b> 34 West 65 Street</b><br>
+        Built in 1939. Made up of 49 units and measures 37,716 gross square feet. <br>
+        <i> Full Market Value</i>: $8,261,000<br>
+        <i> Market Value per SqFt</i>: $219.03
+        <br> </div>
+
+      <div id="tab-3" class="tab-content">
+        <b>56 West 65 Street</b><br>
+        Built in 1937. Made up of 53 units and measures 33,312 gross square feet. <br>
+        <i> Full Market Value</i>: $11,118,000<br>
+        <i> Market Value per SqFt</i>: $333.75<br> </div>
+      <div id="tab-4" class="tab-content">
+        <b> 9 West 64 Street
+        </b><br>
+        Built in 1930. Made up of 35 units and measures 21,528 gross square feet. <br>
+        <i> Full Market Value</i>: $4,116.000<br>
+        <i> Market Value per SqFt</i>: $191.19<br> </div>
+
+      <p> Obviously, there are some similarities between the four buildings.
+      </p>
+      <p> Do you think those similarities are enough to predict the selling price for a unit within the condo? Find out in the game below.</p>
+
+      <div class=adventure-container>
+        <h2>BUY A CONDO</h2>
+        <div id="prompt"></div>
+        <div id="options"></div>
+      </div><br>
+
+      <p> Although it may be an extreme example, that discrepancy between market value and selling price is hardly rare. The undertaxation of these highly valuable buildings results in a growing tax burden for both property owners and tenants of
+        rental buildings. </p>
+      <p> (In Progress)</p>
+
+    </div>
+
+
+
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+
+  </body>
+
+</html>
